@@ -24,13 +24,23 @@ int main() {
             }
         }
     }
-    cout << "Matriz resultante de la multiplicacion: " << endl;
+    cout << "Matriz A:\t";
+    cout << "Matriz B:\t";
+    cout << "Resultado:\n";
     for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << multiplicacion[i][j] << " ";
-        }
-        cout << endl;
+       for (int j = 0; j < 3; j++) {
+        cout << matriz[i][j] << "    ";
     }
-    return 0;
+    cout << "\t";
+    for (int j = 0; j < 3; j++) {
+        cout << matriz2[i][j] << "    ";
+    }
+    cout << "\t";
+    for (int j = 0; j < 3; j++) {
+        cout << multiplicacion[i][j] << "    ";
+    }
+    cout << endl;
+}
+return 0;
 }
 
