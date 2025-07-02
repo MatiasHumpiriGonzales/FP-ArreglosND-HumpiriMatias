@@ -9,14 +9,24 @@ int matriz[3][3];
 		}
 	}
 	int buscador;
-	cout << "Ingrese el numero deseado a buscar: ";
+	cout << "Ingrese el numero deseado a buscar:\n ";
 	cin >> buscador;
+
+	cout << "Matriz:\t\t\tEl valor " << buscador << " se encuentra en\n";
 	for (int i = 0; i < 3; i++){
+		for (int j = 0; j < 3; j++){
+			cout << matriz[i][j];
+			cout << " ";
+		
+		}
 		for (int j = 0; j <3; j++){
 			if (matriz[i][j] == buscador){
-				cout << "El numero " << buscador << " se encuentra en: " << endl << "Fila " << i << ", Columna " << j << endl;
+				cout << "\t\t\tFila " << i << ", Columna " << j << endl;
 			}
 		}
 	}
+	cout << "Valor a buscar: " << buscador;
+	
+
 	return 0;
 }
